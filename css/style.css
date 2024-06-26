@@ -17,6 +17,24 @@ html {
 .container {
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 10px;
+}
+
+.my-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.my-row .my-col {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+img {
+    max-width: 100%;
 }
 
 /*
