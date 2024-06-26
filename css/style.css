@@ -45,6 +45,38 @@ img {
     FOOTER
 */
 
+footer {
+    background-color: #282828;
+}
+
+.footer-container {
+    max-width: 97%;
+    margin: 0 auto;
+}
+
+.footer-container .my-row {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.footer-container .my-row .my-col-2 div {
+    margin: 0 auto;
+    background-color: red;
+}
+
+
 /*
     RESPONSIVE
 */
+
+@media screen and (max-width: 1100px){
+    
+}
+
+@media screen and (max-width: 700px){
+    
+}
+
+@media screen and (max-width: 600px){
+    
+}
