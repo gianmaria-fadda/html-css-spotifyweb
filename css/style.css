@@ -67,6 +67,45 @@ img {
     padding: 0 2px;
 }
 
+/*#upper > aside nav #home :first-child {
+    width: 5px;
+    height: 20px;
+    background-color: greenyellow;
+}*/
+
+#upper > aside nav > * {
+    padding: 5px 20px;
+}
+
+#upper > aside nav * {
+color: grey;
+}
+
+#upper > aside .playlist h3 {
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+#upper > aside .playlist div {
+    margin: 5px 20px;
+}
+
+#upper > aside .playlist .plus-padding {
+    background-color: grey;
+    padding-left: 9px;
+    color: black;
+    font-size: 3cap;
+}
+
+#upper > aside .playlist * {
+    color: grey;
+}
+
+#upper > aside .playlist div > b {
+    padding: 1px 2.1px;
+}
+
 #upper > main {
     width: calc(100% - 200px);
     background-color: #141922;
@@ -81,6 +120,41 @@ img {
     background-color: rgba(0, 0, 0, .5);
     color: white;
     padding: 20px 10px;
+}
+
+#upper > main > nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#upper > main > nav * {
+    color: grey;
+    font-size: 1.1cap;
+    margin: 10px;
+}
+
+#upper > main > div h3 {
+    color: white;
+    padding: 20px;
+}
+
+#upper > main > div p {
+    color: grey;
+    padding: 0 20px;
+}
+
+#upper > main > div * img {
+    width: 150px;
+    margin: 0 20px;
+}
+
+#upper > main > div > section {
+    display: inline;
+}
+
+.border-img img {
+    border-radius: 50%;
 }
 
 /*
@@ -104,7 +178,6 @@ footer {
 
 .footer-container .my-row .my-col-2 div > * {
     margin: 0 auto;
-    background-color: red;
 }
 
 
