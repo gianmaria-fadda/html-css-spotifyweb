@@ -21,8 +21,8 @@ html {
 }
 
 .my-row {
+    height: var(--lower-height);
     display: flex;
-    flex-wrap: wrap;
     margin-left: -10px;
     margin-right: -10px;
 }
@@ -53,6 +53,18 @@ img {
 #upper > aside {
     width: 200px;
     background-color: black;
+}
+
+#upper > aside .logo {
+    filter: invert(100%);
+    display: flex;
+    align-items: center;
+    font-size: 2cap;
+    padding: 15px
+}
+
+#upper > aside .logo * {
+    padding: 0 2px;
 }
 
 #upper > main {
@@ -90,7 +102,7 @@ footer {
     justify-content: space-between;
 }
 
-.footer-container .my-row .my-col-2 div {
+.footer-container .my-row .my-col-2 div > * {
     margin: 0 auto;
     background-color: red;
 }
