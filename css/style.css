@@ -141,16 +141,26 @@ color: grey;
     margin-bottom: 20px;
 }
 
-
-
 #upper > main > header {
     text-align: right;
     position: sticky;
     top: 0;
+    height: 80px;
     margin-bottom: 10px;
     background-color: rgba(0, 0, 0, .5);
     color: white;
     padding: 20px 10px;
+}
+
+#upper > main > header > h5 {
+    border: solid 1px white;
+    border-radius: 50px;
+    width: 200px;
+    height: 40px;
+    padding-top: 12px;
+    text-align: center;
+    position: absolute;
+    right: 10px;
 }
 
 #upper > main > nav {
