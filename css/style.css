@@ -19,7 +19,6 @@ html {
 }
 
 .my-row {
-    height: var(--lower-height);
     display: flex;
     flex-wrap: wrap;
     margin-left: -10px;
@@ -43,6 +42,10 @@ img {
 
 :root {
     --lower-height: 84px;
+}
+
+.margin-col {
+    margin-top: 83px;
 }
 
 /*
@@ -70,12 +73,6 @@ img {
 #upper > aside .logo * {
     padding: 0 2px;
 }
-
-/*#upper > aside nav #home :first-child {
-    width: 5px;
-    height: 20px;
-    background-color: greenyellow;
-}*/
 
 #upper > aside {
     min-height: 400px;
@@ -200,6 +197,21 @@ color: grey;
 
 .border-img img {
     border-radius: 50%;
+}
+
+.title,
+.subtitle {
+    text-align: center;
+}
+
+.title {
+    color: white;
+    padding-top: 10px;
+}
+
+.subtitle {
+    color: grey;
+    font-size: 1cap;
 }
 
 /*
@@ -327,5 +339,28 @@ footer {
 }
 
 @media screen and (max-width: 600px){
-    
+    #upper aside .logo b,
+    #upper aside #home > :last-child,
+    #upper aside #search > :last-child,
+    #upper aside #library > :last-child,
+    #upper aside .playlist,
+    #upper aside #upper-bottom b,
+    #upper aside #upper-bottom hr,
+    #upper aside #upper-bottom > div > span > span {
+        display: none;
+    }
+
+    #upper > aside {
+        width: 60px;
+    }
+
+    #upper > main {
+        width: calc(100% - 60px);
+    }
+
+    .footer-container .my-row .my-col-1 ul {
+        display: block;
+        padding: 20px 10px;
+    }
+
 }
