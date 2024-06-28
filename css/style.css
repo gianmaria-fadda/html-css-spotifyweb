@@ -73,6 +73,10 @@ img {
     background-color: greenyellow;
 }*/
 
+#upper > aside {
+    min-height: 400px;
+}
+
 #upper > aside nav > * {
     padding: 5px 20px;
 }
@@ -104,6 +108,23 @@ color: grey;
 
 #upper > aside .playlist div > b {
     padding: 1px 2.1px;
+}
+
+#upper > aside #upper-bottom {
+    color: white;
+    padding: 0 20px;
+}
+
+#upper > aside #upper-bottom div i {
+    padding-right: 10px;
+}
+
+#upper > aside #upper-bottom hr {
+    margin: 10px 0;
+}
+
+#upper > aside #upper-bottom * {
+    bottom: 0;
 }
 
 #upper > main {
@@ -176,10 +197,68 @@ footer {
     justify-content: space-between;
 }
 
-.footer-container .my-row .my-col-2 div > * {
-    margin: 0 auto;
+.footer-container .my-row .my-col-2 div ul,
+.footer-container .my-row .my-col-3 ul  {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 10px;
+    color: white;
 }
 
+.footer-container .my-row .my-col-2 div ul li,
+.footer-container .my-row .my-col-3 ul li  {
+    padding: 0 10px;
+}
+
+.footer-container .my-row .my-col-2 .all-sound-bar {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 1cap;
+}
+
+.footer-container .my-row .my-col-2 .all-sound-bar .music {
+    flex-grow: 1;
+    background-color: grey;
+    border-radius: 150px;
+    margin: 0 10px;
+    height: 4px;
+    margin-top: 4px;
+}
+
+.footer-container .my-row .my-col-2 .all-sound-bar .sound-bar-progress {
+    width: 20%;
+    background-color: white;
+    height: 4px;
+    border-radius: 150px;
+}
+
+.footer-container .my-row .my-col-3 > div {
+    position: relative;
+}
+
+.footer-container .my-row .my-col-3 ul {
+    margin: 10px 0;
+}
+
+.footer-container .my-row .my-col-3 .volume {
+    width: 35%;
+    background-color: grey;
+    border-radius: 150px;
+    height: 4px;
+    margin-top: 4px;
+    position: absolute;
+    right: 0;
+    top: 35%;
+}
+
+.footer-container .my-row .my-col-3 .volume .sound-bar-progress {
+    width: 20%;
+    background-color: white;
+    height: 4px;
+    border-radius: 150px;
+}
 
 /*
     RESPONSIVE
