@@ -38,7 +38,7 @@ img {
 }
 
 :root {
-    --lower-height: 60px;
+    --lower-height: 84px;
 }
 
 /*
@@ -197,8 +197,38 @@ footer {
     justify-content: space-between;
 }
 
+.footer-container .my-row .my-col-1 img {
+    width: 60px;
+    margin: 10px;
+}
+
+.footer-container .my-row .my-col-1 {
+    display: flex;
+}
+
+.footer-container .my-row .my-col-1 #my-song {
+    padding-top: 5%;
+    color: grey;
+}
+
+.footer-container .my-row .my-col-1 #my-song :first-child {
+    color: white;
+}
+
+.footer-container .my-row .my-col-1 ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 30px;
+    color: grey;
+}
+
+.footer-container .my-row .my-col-1 ul li {
+    padding: 0 15px;
+}
+
 .footer-container .my-row .my-col-2 div ul,
-.footer-container .my-row .my-col-3 ul  {
+.footer-container .my-row .my-col-3 ul {
     display: flex;
     list-style: none;
     justify-content: center;
