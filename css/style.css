@@ -15,14 +15,13 @@ html {
     GENERAL
 */
 .container {
-    max-width: 1000px;
-    margin: 0 auto;
     padding: 0 10px;
 }
 
 .my-row {
     height: var(--lower-height);
     display: flex;
+    flex-wrap: wrap;
     margin-left: -10px;
     margin-right: -10px;
 }
@@ -31,6 +30,11 @@ html {
     width: calc(100% - 20px);
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.my-row .my-col-main {
+    width: calc((100% / 6) - 20px);
+    margin: 0 10px;
 }
 
 img {
@@ -133,6 +137,12 @@ color: grey;
     overflow-y: auto;
 }
 
+#upper > main * {
+    margin-bottom: 20px;
+}
+
+
+
 #upper > main > header {
     text-align: right;
     position: sticky;
@@ -149,10 +159,14 @@ color: grey;
     justify-content: center;
 }
 
-#upper > main > nav * {
+#upper > main > nav > * {
     color: grey;
     font-size: 1.1cap;
     margin: 10px;
+}
+
+#upper > main > nav > .container > .my-row > .mycol-main {
+    padding: 0 10px;
 }
 
 #upper > main > div h3 {
