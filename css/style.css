@@ -52,6 +52,38 @@ img {
     margin-top: 83px;
 }
 
+#upper aside #home *:hover,
+#upper aside #search *:hover,
+#upper aside #library *:hover,
+#upper aside .playlist *:hover,
+#upper > aside #upper-bottom > :first-child:hover,
+main > nav > .container .my-row .my-col-main:hover,
+footer > .footer-container > .my-row .my-col-1 div ul li i:hover,
+footer > .footer-container > .my-row .my-col-1 #my-song p:hover {
+    color: white;
+    cursor: pointer;
+}
+
+footer > .footer-container > .my-row .my-col-1 #my-song p:hover {
+    text-decoration: underline;
+}
+
+main header h5:hover,
+.my-col-2 ul li .fa-circle-play:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.my-col-2 .all-sound-bar .music .sound-bar-progress:hover,
+.my-col-3 div .volume .sound-bar-progress:hover {
+    cursor: pointer;
+    background-color: greenyellow !important; 
+}
+
+#upper aside .playlist .plus-padding:hover {
+    background-color: white;
+}
+
 /*
     MACRO
 */
@@ -120,6 +152,10 @@ color: grey;
     padding: 0 20px;
 }
 
+#upper > aside #upper-bottom > :first-child {
+    color: grey;
+}
+
 #upper > aside #upper-bottom div i {
     padding-right: 10px;
 }
@@ -176,7 +212,7 @@ color: grey;
     margin: 10px;
 }
 
-#upper > main > nav > .container > .my-row > .mycol-main {
+#upper > main > nav > .container > .my-row > .my-col-main {
     padding: 0 10px;
 }
 
@@ -260,6 +296,9 @@ footer {
     list-style: none;
     justify-content: center;
     padding: 30px;
+}
+
+.footer-container .my-row .my-col-1 ul li i {
     color: grey;
 }
 
