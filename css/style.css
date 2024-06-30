@@ -52,6 +52,10 @@ img {
     margin-top: 83px;
 }
 
+body main header {
+    z-index: 1;
+}
+
 #upper aside #home *:hover,
 #upper aside #search *:hover,
 #upper aside #library *:hover,
