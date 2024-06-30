@@ -418,6 +418,10 @@ footer {
         margin-top: 120%;
     }
 
+    body main .container .my-row .my-col-main .title-playlist {
+        padding-right: 10px;
+    }
+
 }
 
 @media screen and (max-width: 700px){
@@ -439,6 +443,10 @@ footer {
 
     .my-row .my-col-main {
         width: calc((100% / 2) - 20px);
+    }
+
+    body main .container .my-row .my-col-main .title-playlist {
+        padding-right: 40px;
     }
 
 }
@@ -486,6 +494,10 @@ footer {
 
     #upper aside #upper-bottom {
         margin-top: 800%;
+    }
+
+    body main .container .my-row .my-col-main .title-playlist {
+        padding-right: 60px;
     }
 
 }
