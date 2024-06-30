@@ -45,7 +45,7 @@ img {
 }
 
 #upper aside #upper-bottom {
-    margin-top: 300px;
+    margin-top: 120%;
 }
 
 .margin-col {
@@ -174,6 +174,29 @@ color: grey;
     overflow-y: auto;
 }
 
+main .container .my-row .my-col-main {
+    position: relative;
+}
+
+#play-button > * {
+    position: absolute;
+    background-color: black;
+    color: white;
+    top: 0;
+    left: 20px;
+    font-size: 4cap;
+    padding: 52px;
+    opacity: 0;
+}
+
+#play-button > *:hover{
+    opacity: .5;
+}
+
+body main .container .my-row .border-img #play-button > * {
+    border-radius: 50%;
+}
+
 #upper > main * {
     margin-bottom: 20px;
 }
@@ -208,12 +231,12 @@ color: grey;
 
 #upper > main > nav > * {
     color: grey;
-    font-size: 1.1cap;
-    margin: 10px;
+    font-size: 1cap;
+    margin-top: 10px;
 }
 
-#upper > main > nav > .container > .my-row > .my-col-main {
-    padding: 0 10px;
+#upper > main > nav > .container .my-row > * {
+    width: 120px;
 }
 
 #upper > main > div h3 {
@@ -252,6 +275,10 @@ color: grey;
 .subtitle {
     color: grey;
     font-size: 1cap;
+}
+
+.title-margin {
+    display: inline;
 }
 
 /*
@@ -373,8 +400,24 @@ footer {
     RESPONSIVE
 */
 
+@media screen and (min-width: 1100px){
+
+    #upper aside #upper-bottom {
+        margin-top: 120%;
+    }
+
+}
+
 @media screen and (max-width: 1100px){
-    
+
+    .my-row .my-col-main {
+        width: calc((100% / 4) - 20px);
+    }
+
+    #upper aside #upper-bottom {
+        margin-top: 120%;
+    }
+
 }
 
 @media screen and (max-width: 700px){
@@ -392,6 +435,10 @@ footer {
         position: absolute;
         top: 20%;
         left: 75px;
+    }
+
+    .my-row .my-col-main {
+        width: calc((100% / 2) - 20px);
     }
 
 }
@@ -431,6 +478,14 @@ footer {
 
     .my-col-3 ul li {
         font-size: small;
+    }
+
+    .my-row .my-col-main {
+        width: calc((100% / 2) - 20px);
+    }
+
+    #upper aside #upper-bottom {
+        margin-top: 800%;
     }
 
 }
